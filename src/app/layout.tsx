@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/navbar/navbar";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const Instrumental = localFont({
   src: "../../public/font/InstrumentSerif-Italic.woff2",
@@ -47,8 +48,10 @@ export default function RootLayout({
       <body
         className={`${satoshi.className} ${Instrumental.variable} antialiased p-4`}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
