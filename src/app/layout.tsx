@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Navbar from "@/components/navbar/navbar";
 
 const Instrumental = localFont({
   src: "../../public/font/InstrumentSerif-Italic.woff2",
@@ -44,8 +45,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.className} ${Instrumental.variable} antialiased`}
+        className={`${satoshi.className} ${Instrumental.variable} antialiased max-w-6xl mx-auto p-4`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
