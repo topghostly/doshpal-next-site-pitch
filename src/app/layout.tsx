@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.className} ${Instrumental.variable} antialiased max-w-6xl mx-auto p-4`}
+        className={`${satoshi.className} ${Instrumental.variable} antialiased p-4`}
       >
         <Navbar />
         {children}
