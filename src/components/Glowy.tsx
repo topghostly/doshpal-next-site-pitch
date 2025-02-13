@@ -6,7 +6,7 @@ import gsap from "gsap";
 type GlowyProp = {
   size: number;
   animate: boolean;
-  newStyle?: {};
+  newStyle?: React.CSSProperties;
 };
 
 const Glowy: React.FC<GlowyProp> = ({ size, animate, newStyle }) => {
@@ -39,7 +39,7 @@ const Glowy: React.FC<GlowyProp> = ({ size, animate, newStyle }) => {
     });
 
     if (animate) requestAnimationFrame(spinAnimationSmall);
-  }, []);
+  });
 
   const spinAnimationSmall = () => {
     gsap.set(containerRef.current, {
