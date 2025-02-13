@@ -24,9 +24,19 @@ export default function Home() {
           <p className="bg-accent w-fit py-2 px-4 rounded-lg mx-auto dark:bg-background dark:border-[1px] border-glassMorphBorderBackground">
             Our products
           </p>
-          <div className="w-full grid grid-rows-2 gap-4">
+          <div className="w-full grid grid-rows-2 gap-4 relative">
             <div className="grid grid-cols-2 gap-4">
-              <article className=" bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground">
+              <article className=" bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground overflow-hidden">
+                {" "}
+                <Glowy
+                  size={180}
+                  animate={false}
+                  newStyle={{
+                    top: "-100px",
+                    left: "-50px",
+                    transform: "rotate(10deg)",
+                  }}
+                />
                 <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
                   <h1 className="text-5xl font-medium">DoshFlex</h1>
                   <p className="text-sm text-center">
@@ -35,7 +45,16 @@ export default function Home() {
                   </p>
                 </div>
               </article>
-              <article className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground">
+              <article className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground overflow-hidden">
+                <Glowy
+                  size={160}
+                  animate={false}
+                  newStyle={{
+                    top: "-100px",
+                    right: "-50px",
+                    transform: "rotate(200deg)",
+                  }}
+                />
                 <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
                   <h1 className="text-5xl font-medium">DoshLyft</h1>
                   <p className="text-sm text-center text-primary">
@@ -45,7 +64,25 @@ export default function Home() {
               </article>
             </div>
             {/* LONG PRODUCT */}
-            <article className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground">
+            <article className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground overflow-hidden">
+              <Glowy
+                size={100}
+                animate={false}
+                newStyle={{
+                  top: "-50px",
+                  left: "-50px",
+                  transform: "rotate(200deg)",
+                }}
+              />
+              <Glowy
+                size={160}
+                animate={false}
+                newStyle={{
+                  bottom: "-60px",
+                  right: "-50px",
+                  transform: "rotate(200deg)",
+                }}
+              />
               <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
                 <h1 className="text-5xl font-medium">DoshInvest</h1>
                 <p className="text-sm text-center text-primary">
@@ -103,7 +140,7 @@ export default function Home() {
         </section>
         {/* LAST CTA */}
         <div className="relative flex justify-center items-center h-[0px]">
-          <Glowy size={320} animate={false} />
+          <Glowy size={320} animate={true} />
         </div>
       </main>
       {/* FOOTER */}
@@ -158,6 +195,9 @@ export default function Home() {
         </div>
       </footer>
       {/* FOOTER */}
+      {/* <div className="relative w-full">
+        <HalfGlowy size={200} />
+      </div> */}
     </div>
   );
 }

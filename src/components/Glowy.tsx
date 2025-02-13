@@ -6,9 +6,10 @@ import gsap from "gsap";
 type GlowyProp = {
   size: number;
   animate: boolean;
+  newStyle?: {};
 };
 
-const Glowy: React.FC<GlowyProp> = ({ size, animate }) => {
+const Glowy: React.FC<GlowyProp> = ({ size, animate, newStyle }) => {
   const containerRef = useRef(null);
   const holderRef = useRef(null);
 
@@ -16,7 +17,6 @@ const Glowy: React.FC<GlowyProp> = ({ size, animate }) => {
   let OUTER_DEGREE = 1;
 
   /* ANIMATION LOGIC */
-
   useEffect(() => {
     gsap.set(containerRef.current, {
       background:
@@ -56,12 +56,12 @@ const Glowy: React.FC<GlowyProp> = ({ size, animate }) => {
   return (
     <div
       style={{
+        ...newStyle,
         width: `${size}px`,
         height: `${size}px`,
         position: "absolute",
-        top: 0,
         margin: "0px auto",
-        transform: "rotate(180deg)",
+        zIndex: -1,
       }}
     >
       <div
