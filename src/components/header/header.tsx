@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export default function Header() {
   return (
-    <header className="">
+    <header className="px-4">
       <div className="w-full h-[calc(100vh-100px)] bg-black rounded-3xl flex justify-center items-center flex-col">
         <div className="text-white text-7xl flex items-center flex-col gap-4 font-medium text-center sticky top-50 bottom-0">
           <h1>

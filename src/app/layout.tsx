@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.className} ${Instrumental.variable} antialiased p-4`}
+        className={`${satoshi.className} ${Instrumental.variable} antialiased`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
           <Navbar />

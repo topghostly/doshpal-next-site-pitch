@@ -2,7 +2,10 @@ import { AccordionDemo } from "@/components/Accordian";
 import Header from "@/components/header/header";
 import LogoSlider from "@/components/LogoSlider";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Signature } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
+import { ArrowRight, Signature, Swords } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -98,19 +101,59 @@ export default function Home() {
           </div>
         </section>
         {/* LAST CTA */}
-        {/* FOOTER */}
-        <footer className="bg-glassBackgroundBody backdrop-blur-md dark:border-t-[1px]">
-          <div>
-            {/* LEFT SIDE */}
-            <div></div>
-            {/* LEFT SIDE */}
-            {/* RIGHT SIDE */}
-            <div></div>
-            {/* RIGHT SIDE */}
-          </div>
-        </footer>
-        {/* FOOTER */}
       </main>
+      {/* FOOTER */}
+      <footer className="bg-glassBackgroundBody backdrop-blur-md dark:border-t-[1px] w-full flex flex-col">
+        <div className="max-w-6xl flex justify-between mx-auto py-14 w-full">
+          {/* LEFT SIDE */}
+          <div className="flex flex-col gap-5">
+            <div>
+              <Image
+                src={"/images/longlogo.png"}
+                width={150}
+                height={80}
+                alt="doshpal logo image"
+              />
+            </div>
+            <div className="max-w-[25rem] flex flex-col gap-4">
+              <p className="font-semibold">Join our newsletter</p>
+              <p>
+                Sign up to our mailing list below and be the first to know about
+                new updates. Don't worry, we hate spam too.
+              </p>
+              <div className="flex w-full max-w-sm items-center space-x-2">
+                <Input type="email" placeholder="Email" />
+                <Button type="submit">Subscribe</Button>
+              </div>
+            </div>
+          </div>
+          {/* LEFT SIDE */}
+          {/* RIGHT SIDE */}
+          <div className="flex gap-6">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-md font-semibold">Pages</h3>
+              <p>About</p>
+              <p>Services</p>
+              <p>Blogs</p>
+              <p>404</p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h3 className="text-md font-semibold">Information</h3>
+              <p>FAQ</p>
+              <p>Contact</p>
+              <p>Legal</p>
+              <p>Account</p>
+            </div>
+          </div>
+          {/* RIGHT SIDE */}
+        </div>
+        <Separator />
+        <div className="text-sm px-8 py-6 flex justify-end items-center gap-1">
+          <Swords size={16} />
+          <p>Code by Tope</p>
+        </div>
+      </footer>
+      {/* FOOTER */}
     </div>
   );
 }
