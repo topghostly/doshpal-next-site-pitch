@@ -4,6 +4,7 @@ import { CirclePlay, Signature, Soup } from "lucide-react";
 import { Button } from "../ui/button";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";
+import VideoBackground from "../VideoBackground";
 
 export default function Header() {
   useLayoutEffect(() => {
@@ -32,14 +33,7 @@ export default function Header() {
   return (
     <header className="px-4">
       <div className=" relative w-full h-[calc(100vh-100px)] bg-black rounded-3xl flex justify-center items-center flex-col overflow-hidden ">
-        <iframe
-          src="https://player.vimeo.com/video/1056505834?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          // style="position:absolute;top:0;left:0;width:100%;height:100%;"
-          className="absolute top-0 left-0 w-full h-full"
-          title="Untitled"
-        ></iframe>
+        <VideoBackground />
         <div className="text-white text-7xl flex items-center flex-col gap-4 font-medium text-center sticky top-50 bottom-0">
           <h1 className="header--text">
             Join the <span className="font-instrumental">Journey</span>
