@@ -1,4 +1,5 @@
 import { AccordionDemo } from "@/components/Accordian";
+import Glowy from "@/components/Glowy";
 import Header from "@/components/header/header";
 import LogoSlider from "@/components/LogoSlider";
 import { Button } from "@/components/ui/button";
@@ -20,12 +21,12 @@ export default function Home() {
         {/* LOGO SLIDER */}
         {/* PRODUCTS SECTION */}
         <section className="flex flex-col gap-12 items-center">
-          <p className="bg-accent w-fit py-2 px-4 rounded-lg mx-auto dark:bg-background dark:border-[1px]">
+          <p className="bg-accent w-fit py-2 px-4 rounded-lg mx-auto dark:bg-background dark:border-[1px] border-glassMorphBorderBackground">
             Our products
           </p>
           <div className="w-full grid grid-rows-2 gap-4">
             <div className="grid grid-cols-2 gap-4">
-              <article className=" bg-glassBackgroundBody backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px]">
+              <article className=" bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground">
                 <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
                   <h1 className="text-5xl font-medium">DoshFlex</h1>
                   <p className="text-sm text-center">
@@ -34,7 +35,7 @@ export default function Home() {
                   </p>
                 </div>
               </article>
-              <article className="bg-glassBackgroundBody backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px]">
+              <article className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground">
                 <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
                   <h1 className="text-5xl font-medium">DoshLyft</h1>
                   <p className="text-sm text-center text-primary">
@@ -44,7 +45,7 @@ export default function Home() {
               </article>
             </div>
             {/* LONG PRODUCT */}
-            <article className="bg-glassBackgroundBody backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px]">
+            <article className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground">
               <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
                 <h1 className="text-5xl font-medium">DoshInvest</h1>
                 <p className="text-sm text-center text-primary">
@@ -78,7 +79,7 @@ export default function Home() {
         {/* FREQUESTLY ASKED SHII */}
         {/* LAST CTA */}
         <section className="flex flex-col gap-12 items-center">
-          <div className="bg-glassBackgroundBody backdrop-blur-md flex justify-center items-center rounded-3xl dark:border-[1px] py-20 px-34 flex-col gap-6">
+          <div className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground py-20 px-34 flex-col gap-6">
             <div className=" flex flex-col justify-center items-center gap-8">
               <div className="text-7xl">
                 <h1 className="font-medium">Ready to become</h1>
@@ -101,9 +102,12 @@ export default function Home() {
           </div>
         </section>
         {/* LAST CTA */}
+        <div className="relative flex justify-center items-center h-[0px]">
+          <Glowy size={320} animate={false} />
+        </div>
       </main>
       {/* FOOTER */}
-      <footer className="bg-glassBackgroundBody backdrop-blur-md dark:border-t-[1px] w-full flex flex-col">
+      <footer className="bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md dark:border-t-[1px] border-glassMorphBorderBackground w-full flex flex-col">
         <div className="max-w-6xl flex justify-between mx-auto py-14 w-full">
           {/* LEFT SIDE */}
           <div className="flex flex-col gap-5">
