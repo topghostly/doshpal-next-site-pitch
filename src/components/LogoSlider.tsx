@@ -16,7 +16,7 @@ function LogoSlider() {
     }
     gsap.set(".first-row", { xPercent: xPercent1 });
     gsap.set(".second-row", { xPercent: xPercent2 });
-    xPercent1 -= 0.043;
+    xPercent1 -= 0.06;
     xPercent2 -= 0.1;
     requestAnimationFrame(slideAnimation);
   };
@@ -25,8 +25,9 @@ function LogoSlider() {
   });
 
   return (
-    <div className="relative overflow-hidden flex">
-      <div className="flex gap-[120px] top-0 first-row ">
+    <div className="relative overflow-hidden flex h-10 justify-between">
+      <div className="w-[100px] h-full bg-gradient-to-r from-white dark:from-background to-transparent z-10"></div>
+      <div className="flex gap-[120px] top-0 first-row dark:invert">
         <Image
           src={"/images/image1.webp"}
           alt="company logo"
@@ -58,7 +59,7 @@ function LogoSlider() {
           height={100}
         />
       </div>
-      <div className="flex gap-[120px] top-0 absolute left-[100%] second-row">
+      <div className="flex gap-[120px] top-0 absolute left-[100%] dark:invert second-row">
         <Image
           src={"/images/image1.webp"}
           alt="company logo"
@@ -90,6 +91,7 @@ function LogoSlider() {
           height={100}
         />
       </div>
+      <div className="w-[100px] h-full bg-gradient-to-l from-white dark:from-background to-transparent z-10"></div>
     </div>
   );
 }
