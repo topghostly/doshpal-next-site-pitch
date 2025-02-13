@@ -34,13 +34,14 @@ export default function Header() {
     <header className="px-4">
       <div className=" relative w-full h-[calc(100vh-100px)] bg-black rounded-3xl flex justify-center items-center flex-col overflow-hidden ">
         <VideoBackground />
+        <div className="absolute top-0 left-o bg-black w-full h-full opacity-40"></div>
         <div className="text-white text-7xl flex items-center flex-col gap-4 font-medium text-center sticky top-50 bottom-0">
           <h1 className="header--text">
             Join the <span className="font-instrumental">Journey</span>
           </h1>
           <h1 className="header--text">to Financial Growth.</h1>
         </div>
-        <div className="absolute bottom-10 flex gap-3 hover:cursor-pointer">
+        <div className="absolute bottom-10 flex gap-3 hover:cursor-pointer py-3 px-4 rounded-[50px] text-white ">
           <CirclePlay /> Play video
         </div>
       </div>
@@ -65,16 +66,6 @@ export default function Header() {
         </div>
       </div>
       {/* DESCRIPTION AND CTAs */}
-      {/* <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe
-          src="https://player.vimeo.com/video/1056505834?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"
-          title="Untitled"
-        ></iframe>
-      </div>
-      <script src="https://player.vimeo.com/api/player.js"></script> */}
     </header>
   );
 }

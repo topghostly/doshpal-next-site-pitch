@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mt-[65px] flex flex-col gap-16">
+    <div className="mt-[85px] flex flex-col gap-16">
       <Header />
       <main className="max-w-6xl mx-auto p-4 flex flex-col gap-20">
         {/* LOGO SLIDER */}

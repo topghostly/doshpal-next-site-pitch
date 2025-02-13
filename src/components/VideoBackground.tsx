@@ -1,20 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
-import Vimeo from "@u-wave/react-vimeo";
 import Image from "next/image";
 
 function VideoBackground() {
   const [loaded, setLoaded] = useState<boolean>(false);
   return (
     <>
-      <Vimeo
-        video="1056505834"
-        autoplay
+      <video
+        playsInline
+        autoPlay
         muted
         loop
-        background={true}
-        responsive={true}
         style={{
           position: "absolute",
           top: 0,
@@ -23,11 +20,24 @@ function VideoBackground() {
           height: "100%",
           objectFit: "cover",
         }}
-        onPlaying={() => {
+        onLoadedData={() => {
           setLoaded(true);
-          console.log("Loaded ");
         }}
-      />
+      >
+        <source src="/video/video.webm" type="video/webm" />
+      </video>
+      {!loaded && (
+        <Image
+          src="/images/thumb.jpg"
+          alt="background logo image"
+          layout="fill"
+          objectFit="cover"
+          priority
+          style={{
+            opacity: 0,
+          }}
+        />
+      )}
     </>
   );
 }
