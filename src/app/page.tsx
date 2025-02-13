@@ -15,7 +15,7 @@ export default function Home() {
       <main className="max-w-6xl mx-auto p-4 flex flex-col gap-20">
         {/* LOGO SLIDER */}
         <section className="flex flex-col gap-12 items-center">
-          <p className="text-primary font-medium">You're in good hands</p>
+          <p className="text-primary font-medium">You&apos;re in good hands</p>
           <LogoSlider />
         </section>
         {/* LOGO SLIDER */}
@@ -58,7 +58,7 @@ export default function Home() {
                 <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
                   <h1 className="text-5xl font-medium">DoshLyft</h1>
                   <p className="text-sm text-center text-primary">
-                    Small and Medium Enterprise (SME's) Development Loans
+                    Small and Medium Enterprise (SME&apos;s) Development Loans
                   </p>
                 </div>
               </article>
@@ -126,8 +126,9 @@ export default function Home() {
                 </h1>
               </div>
               <p className="text-lg text-center text-primary w-[75%]">
-                If you're ready to unlock new financial opportunities and grow
-                with flexible loan solutions, you're in the right place.
+                If you&apos;re ready to unlock new financial opportunities and
+                grow with flexible loan solutions, you&apos;re in the right
+                place.
               </p>
             </div>
             <div>
@@ -163,7 +164,7 @@ export default function Home() {
               <p className="font-semibold">Join our newsletter</p>
               <p>
                 Sign up to our mailing list below and be the first to know about
-                new updates. Don't worry, we hate spam too.
+                new updates. Don&apos;t worry, we hate spam too.
               </p>
               <div className="flex w-full max-w-sm items-center space-x-2">
                 <Input type="email" placeholder="Email" />

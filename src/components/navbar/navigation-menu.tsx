@@ -40,7 +40,8 @@ export function NavMenu() {
                 Corporate financing and individual loans.
               </ListItem>
               <ListItem href="#" title="DoshLyft">
-                Small and Medium Enterprise (SME's) Development Loans.
+                Small and Medium Enterprise (SMEglassMorphNavBackgrounds)
+                Development Loans.
               </ListItem>
               <ListItem href="#" title="DoshInvest">
                 Get up to 24% return on investment with us.
