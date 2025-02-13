@@ -148,13 +148,16 @@ export default function Home() {
         <div className="max-w-6xl flex justify-between mx-auto py-14 w-full">
           {/* LEFT SIDE */}
           <div className="flex flex-col gap-5">
-            <div>
+            <div className="pb-5 flex gap-2 items-center">
               <Image
-                src={"/images/longlogo.png"}
-                width={150}
-                height={80}
+                src={"/images/logo.png"}
+                width={40}
+                height={40}
                 alt="doshpal logo image"
               />
+              <p className="text-3xl font-black">
+                Dosh<span className="font-medium">Pal</span>
+              </p>
             </div>
             <div className="max-w-[25rem] flex flex-col gap-4">
               <p className="font-semibold">Join our newsletter</p>

@@ -1,15 +1,50 @@
+"use client";
+
 import { CirclePlay, Signature, Soup } from "lucide-react";
 import { Button } from "../ui/button";
+import { useLayoutEffect } from "react";
+import gsap from "gsap";
 
 export default function Header() {
+  useLayoutEffect(() => {
+    const text = document.querySelectorAll(".header--text");
+
+    gsap.set(text, {
+      opacity: 0,
+      filter: "blur(10px)",
+    });
+
+    const tl = gsap.timeline([]);
+
+    tl.to(text, {
+      opacity: 1,
+      stagger: 0.1,
+      delay: 9.7,
+    }).to(
+      text,
+      {
+        filter: "blur(0px)",
+        stagger: 0.1,
+      },
+      "-=0.4"
+    );
+  }, []);
   return (
     <header className="px-4">
-      <div className="w-full h-[calc(100vh-100px)] bg-black rounded-3xl flex justify-center items-center flex-col">
+      <div className=" relative w-full h-[calc(100vh-100px)] bg-black rounded-3xl flex justify-center items-center flex-col overflow-hidden ">
+        <iframe
+          src="https://player.vimeo.com/video/1056505834?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          // style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          className="absolute top-0 left-0 w-full h-full"
+          title="Untitled"
+        ></iframe>
         <div className="text-white text-7xl flex items-center flex-col gap-4 font-medium text-center sticky top-50 bottom-0">
-          <h1>
+          <h1 className="header--text">
             Join the <span className="font-instrumental">Journey</span>
           </h1>
-          <h1>to Financial Growth.</h1>
+          <h1 className="header--text">to Financial Growth.</h1>
         </div>
         <div className="absolute bottom-10 flex gap-3 hover:cursor-pointer">
           <CirclePlay /> Play video
@@ -36,6 +71,16 @@ export default function Header() {
         </div>
       </div>
       {/* DESCRIPTION AND CTAs */}
+      {/* <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
+          src="https://player.vimeo.com/video/1056505834?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          title="Untitled"
+        ></iframe>
+      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script> */}
     </header>
   );
 }

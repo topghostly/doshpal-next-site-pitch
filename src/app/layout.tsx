@@ -50,7 +50,7 @@ export default function RootLayout({
         className={`${satoshi.className} ${Instrumental.variable} antialiased`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark" enableSystem>
-          <Loader />
+          {/* <Loader /> */}
           <Navbar />
           {children}
         </ThemeProvider>
