@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/navbar/navbar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import Loader from "@/components/Loader";
+// import Error from "@/components/Error";
 
 const Instrumental = localFont({
   src: "../../public/font/InstrumentSerif-Italic.woff2",
@@ -46,12 +47,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.className} ${Instrumental.variable} antialiased`}
+        className={`${satoshi.className} ${Instrumental.variable} antialiased select-none`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark" enableSystem>
           <Loader />
           <Navbar />
           {children}
+          {/* <Error /> */}
         </ThemeProvider>
       </body>
     </html>

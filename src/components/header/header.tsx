@@ -20,7 +20,7 @@ export default function Header() {
     tl.to(text, {
       opacity: 1,
       stagger: 0.1,
-      delay: 9.7,
+      delay: 8.2,
     }).to(
       text,
       {

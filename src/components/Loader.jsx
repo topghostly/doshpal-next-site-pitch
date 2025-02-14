@@ -34,7 +34,7 @@ function Loader() {
         strokeDashoffset: 0,
         duration: 2,
         ease: "power2.inOut",
-        delay: 2,
+        delay: 0.5,
       })
         .to(svgHolderRef.current, {
           scale: 0,
