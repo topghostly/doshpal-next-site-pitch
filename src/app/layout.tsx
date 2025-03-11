@@ -49,7 +49,7 @@ export default function RootLayout({
         className={`${satoshi.className} ${Instrumental.variable} antialiased select-none max-w-[1280px] mx-auto overflow-x-hidden`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="dark" enableSystem>
-          {/* <Loader /> */}
+          <Loader />
           <Navbar />
           {children}
         </ThemeProvider>
