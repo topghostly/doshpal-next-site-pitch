@@ -27,7 +27,6 @@ export default function Home() {
           <div className="w-full grid grid-rows-2 gap-4 relative">
             <div className="grid grid-cols-2 gap-4">
               <article className=" bg-glassMorphBodyBackground dark:bg-glassMorphBodyBackgroundDark backdrop-blur-md h-60 flex justify-center items-center rounded-3xl dark:border-[1px] border-glassMorphBorderBackground overflow-hidden">
-                {" "}
                 <Glowy
                   size={180}
                   animate={false}
