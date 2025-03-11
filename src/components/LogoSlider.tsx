@@ -25,8 +25,8 @@ function LogoSlider() {
   });
 
   return (
-    <div className="relative overflow-hidden flex h-10 justify-between">
-      <div className="w-[100px] h-full bg-gradient-to-r from-white dark:from-background to-transparent z-10"></div>
+    <div className="relative overflow-hidden flex h-10 justify-between max-w-[300px] sm:max-w-[500px] md:max-w-full">
+      <div className="w-[100px] h-full bg-gradient-to-r from-white dark:from-background to-transparent z-10" />
       <div className="flex gap-[120px] top-0 first-row dark:invert">
         <Image
           src={"/images/image1.webp"}
@@ -91,7 +91,7 @@ function LogoSlider() {
           height={100}
         />
       </div>
-      <div className="w-[100px] h-full bg-gradient-to-l from-white dark:from-background to-transparent z-10"></div>
+      <div className="w-[100px] h-full bg-gradient-to-l from-white dark:from-background to-transparent z-10" />
     </div>
   );
 }
