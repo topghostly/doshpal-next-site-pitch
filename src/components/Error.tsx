@@ -11,7 +11,7 @@ function Error() {
           src={"/images/logo.png"}
           width={25}
           height={25}
-          alt="doshpal logo image"
+          alt="Payverge logo image"
         />
         <p className=" font-semibold">
           Dosh<span className="font-medium">Pal</span>

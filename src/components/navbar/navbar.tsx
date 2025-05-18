@@ -11,7 +11,7 @@ export default function Navbar() {
           <div>
             <Image
               src={"/images/logo.png"}
-              alt="doshpal logo"
+              alt="Payverge logo"
               width={25}
               height={25}
             />

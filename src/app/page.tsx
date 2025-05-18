@@ -97,7 +97,7 @@ export default function Home() {
         <section className="w-full flex justify-center flex-col gap-12 items-center">
           <div className="max-w-5xl flex justify-center items-center">
             <p className="text-center text-2xl md:text-4xl font-medium">
-              Doshpal offers loans with competitive rates, flexible terms, and
+              Payverge offers loans with competitive rates, flexible terms, and
               quick access to cash—whether personal, business, payroll, or asset
               financing. Apply today and achieve your financial goals!
             </p>
@@ -152,7 +152,7 @@ export default function Home() {
             src={"/images/logo.png"}
             width={40}
             height={40}
-            alt="doshpal logo image"
+            alt="Payverge logo image"
           />
           <p className="text-3xl font-black">
             Dosh<span className="font-medium">Pal</span>

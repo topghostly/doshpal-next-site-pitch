@@ -10,7 +10,7 @@ export function AccordionDemo() {
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger>
-          What types of loans does Doshpal offer?
+          What types of loans does Payverge offer?
         </AccordionTrigger>
         <AccordionContent>
           We offer a variety of loans, including personal loans, business loans,
