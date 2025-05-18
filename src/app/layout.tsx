@@ -34,7 +34,7 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Payverge",
+  title: "Payverge • Get loans at vey competitive rates",
   description: "Get instant loans at good rates",
 };
 
