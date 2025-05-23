@@ -74,7 +74,7 @@ function Loader() {
   }, []);
   return (
     <div
-      className="bg-background w-full h-full fixed top-0 z-50 none overflow-hidden flex justify-center items-center"
+      className="bg-red-500 w-full h-full fixed top-0 left-0 z-50 none overflow-hidden flex justify-center items-center"
       style={{
         "--mask-size": "0%",
         maskImage:
