@@ -32,7 +32,7 @@ export default function Header() {
   }, []);
   return (
     <header className="px-4">
-      <div className=" relative w-full h-[calc(100vh-100px)] bg-black rounded-3xl flex justify-center items-center flex-col overflow-hidden ">
+      <div className=" relative w-full h-[calc(100vh-100px)] max-h-[700px] bg-black rounded-3xl flex justify-center items-center flex-col overflow-hidden ">
         <VideoBackground />
         <div className="absolute top-0 left-o bg-black w-full h-full opacity-40"></div>
         <div className="text-white text-5xl md:text-7xl flex items-center flex-col gap-4 font-medium text-center sticky top-50 bottom-0">

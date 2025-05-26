@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="flex justify-center items-center gap-3">
           <div>
             <Image
-              src={"/images/logo.png"}
+              src={"/images/logo-01.png"}
               alt="Payverge logo"
               width={25}
               height={25}

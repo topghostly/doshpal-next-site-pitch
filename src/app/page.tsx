@@ -38,7 +38,7 @@ export default function Home() {
                   }}
                 />
                 <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
-                  <h1 className="text-3xl md:text-5xl font-medium">DoshFlex</h1>
+                  <h1 className="text-3xl md:text-5xl font-medium">VergeFlex</h1>
                   <p className="text-sm text-center">
                     Corporate financing and personalized loan solutions tailored
                     to your needs.
@@ -56,7 +56,7 @@ export default function Home() {
                   }}
                 />
                 <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
-                  <h1 className="text-3xl md:text-5xl font-medium">DoshLyft</h1>
+                  <h1 className="text-3xl md:text-5xl font-medium">VergeLyft</h1>
                   <p className="text-sm text-center text-primary">
                     Small and Medium Enterprise (SME&apos;s) Development Loans
                   </p>
@@ -84,7 +84,7 @@ export default function Home() {
                 }}
               />
               <div className="max-w-[350px] flex flex-col justify-center items-center gap-6">
-                <h1 className="text-3xl md:text-5xl font-medium">DoshInvest</h1>
+                <h1 className="text-3xl md:text-5xl font-medium">VergeInvest</h1>
                 <p className="text-sm text-center text-primary">
                   Get up to 24% return on investment with us
                 </p>
@@ -149,17 +149,17 @@ export default function Home() {
         {/* TOP SECTION */}
         <div className="pb-8 pt-10 flex gap-2 items-center">
           <Image
-            src={"/images/logo.png"}
+            src={"/images/logo-01.png"}
             width={40}
             height={40}
             alt="Payverge logo image"
           />
-          <p className="text-3xl font-black">
-            Dosh<span className="font-medium">Pal</span>
+          <p className="text-2xl font-black">
+            Pay<span className="font-medium">verge</span>
           </p>
         </div>
         {/* TOP SECTION */}
-        <div className="max-w-6xl flex flex-col md:flex-row justify-between mx-auto pb-14 w-full gap-10">
+        <div className=" flex flex-col md:flex-row justify-between pb-14 w-full gap-10">
           {/* LEFT SIDE */}
           <div className="flex flex-col gap-5">
             <div className="max-w-[25rem] flex flex-col gap-4">

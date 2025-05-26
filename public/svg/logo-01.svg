@@ -1,14 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210.14 210.14">
-  <defs>
-    <linearGradient id="linear-gradient" x1="106.28" y1="190.95" x2="103.25" y2="17.75" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#a167ab"/>
-      <stop offset=".2" stop-color="#a569a8"/>
-      <stop offset=".43" stop-color="#b370a1"/>
-      <stop offset=".67" stop-color="#c97b96"/>
-      <stop offset=".91" stop-color="#e88b86"/>
-      <stop offset="1" stop-color="#f6927f"/>
-    </linearGradient>
-  </defs>
-  <path d="m83.77,26.59h47.03c10.63,0,21.14,2.72,30.24,8.23,4.34,2.63,7.89,5.54,10.38,8.34,7.89,8.87,11.24,20.91,11.24,32.79,0,0,0,25.69,0,25.69,0,14.7-6.27,28.86-17.6,38.22-7.56,6.24-16.86,10.15-27.08,10.15h-18.86c-4.48,0-8.89,1.06-12.88,3.09l-56.32,28.72c-11.81,6.02-25.21-4.7-21.92-17.54l30.12-117.77c3-11.73,13.56-19.93,25.67-19.93Z" fill="none" stroke="url(#linear-gradient)" stroke-miterlimit="10" stroke-width="17"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="194.42 188.42 487.16 462.94" enable-background="new 194.42 188.42 487.16 462.94" xml:space="preserve">
 </svg>

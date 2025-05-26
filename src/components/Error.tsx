@@ -14,7 +14,7 @@ function Error() {
           alt="Payverge logo image"
         />
         <p className=" font-semibold">
-          Dosh<span className="font-medium">Pal</span>
+          Verge<span className="font-medium">Pal</span>
         </p>
       </div>
       <div className="opacity-50">

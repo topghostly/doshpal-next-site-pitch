@@ -36,14 +36,14 @@ export function NavMenu() {
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="#" title="DoshFlex">
+              <ListItem href="#" title="VergeFlex">
                 Corporate financing and individual loans.
               </ListItem>
-              <ListItem href="#" title="DoshLyft">
+              <ListItem href="#" title="VergeLyft">
                 Small and Medium Enterprise (SMEglassMorphNavBackgrounds)
                 Development Loans.
               </ListItem>
-              <ListItem href="#" title="DoshInvest">
+              <ListItem href="#" title="VergeInvest">
                 Get up to 24% return on investment with us.
               </ListItem>
             </ul>
